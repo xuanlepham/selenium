@@ -41,10 +41,14 @@ public class Topic_02_Selenium_Locator {
 	@Test
 	public void TC_05_Tagname() {
 		driver.navigate().refresh();
+		driver.findElement(By.name("emailid")).click();
+		driver.findElement(By.name("emailid")).sendKeys("phamxuanle833@gmail.com");
+		driver.findElement(By.xpath("//input[@name='btnLogin']")).click();
+		
 	}
 	@Test
 	public void TC_06_Linktext() {
-		
+			
 	}
 	@Test
 	public void TC_07_PartialLinktext() {
@@ -60,6 +64,11 @@ public class Topic_02_Selenium_Locator {
 	}
 	@AfterClass
 	public void afterClass() {
+		try {
+		    Thread.sleep(5000); 
+		} catch (InterruptedException e) {
+		    e.printStackTrace();
+		}
 		driver.quit();
 	}
 }

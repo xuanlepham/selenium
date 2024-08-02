@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="webdriver.Topic_02_Selenium_Locator">
+      <class name="webdriver.Topic_03_selector">
         <methods>
           <include name="beforeClass"/>
-          <include name="TC_01"/>
+          <include name="TC_03_Click"/>
           <include name="afterClass"/>
         </methods>
-      </class> <!-- webdriver.Topic_02_Selenium_Locator -->
+      </class> <!-- webdriver.Topic_03_selector -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
