@@ -1,41 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-04T09:59:46Z" name="Default suite" finished-at="2024-08-04T10:01:37Z" duration-ms="111302">
+  <suite started-at="2024-08-11T12:14:43Z" name="Default suite" finished-at="2024-08-11T12:14:51Z" duration-ms="7814">
     <groups>
     </groups>
-    <test started-at="2024-08-04T09:59:46Z" name="Default test" finished-at="2024-08-04T10:01:37Z" duration-ms="111302">
-      <class name="webdriver.Topic_03_selector2">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:webdriver.Topic_03_selector2@68f4865]" started-at="2024-08-04T09:59:46Z" name="beforeClass" finished-at="2024-08-04T10:00:07Z" duration-ms="20856" status="PASS">
+    <test started-at="2024-08-11T12:14:43Z" name="Default test" finished-at="2024-08-11T12:14:51Z" duration-ms="7814">
+      <class name="webdriver.Topic_07_Browser_Element3">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:webdriver.Topic_07_Browser_Element3@18e36d14]" started-at="2024-08-11T12:14:43Z" name="beforeClass" finished-at="2024-08-11T12:14:44Z" duration-ms="863" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="TC_01_Email()[pri:1, instance:webdriver.Topic_03_selector2@68f4865]" started-at="2024-08-04T10:00:07Z" name="TC_01_Email" finished-at="2024-08-04T10:00:07Z" duration-ms="428" status="PASS">
+        <test-method signature="TC_03_Is_Displayed_Refactor()[pri:0, instance:webdriver.Topic_07_Browser_Element3@18e36d14]" started-at="2024-08-11T12:14:44Z" name="TC_03_Is_Displayed_Refactor" finished-at="2024-08-11T12:14:45Z" duration-ms="1481" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_01_Email -->
-        <test-method signature="TC_02_Email()[pri:2, instance:webdriver.Topic_03_selector2@68f4865]" started-at="2024-08-04T10:00:07Z" name="TC_02_Email" finished-at="2024-08-04T10:00:27Z" duration-ms="19830" status="PASS">
+        </test-method> <!-- TC_03_Is_Displayed_Refactor -->
+        <test-method signature="TC_04_Is_Enable_Refactor()[pri:0, instance:webdriver.Topic_07_Browser_Element3@18e36d14]" started-at="2024-08-11T12:14:45Z" name="TC_04_Is_Enable_Refactor" finished-at="2024-08-11T12:14:45Z" duration-ms="89" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_02_Email -->
-        <test-method signature="TC_03_Password()[pri:3, instance:webdriver.Topic_03_selector2@68f4865]" started-at="2024-08-04T10:00:27Z" name="TC_03_Password" finished-at="2024-08-04T10:00:47Z" duration-ms="20062" status="PASS">
+        </test-method> <!-- TC_04_Is_Enable_Refactor -->
+        <test-method signature="TC_05_Is_Select_Refactor()[pri:0, instance:webdriver.Topic_07_Browser_Element3@18e36d14]" started-at="2024-08-11T12:14:45Z" name="TC_05_Is_Select_Refactor" finished-at="2024-08-11T12:14:46Z" duration-ms="230" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_03_Password -->
-        <test-method signature="TC_04_Cpassword()[pri:4, instance:webdriver.Topic_03_selector2@68f4865]" started-at="2024-08-04T10:00:47Z" name="TC_04_Cpassword" finished-at="2024-08-04T10:01:07Z" duration-ms="19919" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_04_Cpassword -->
-        <test-method signature="TC_05_Phone()[pri:5, instance:webdriver.Topic_03_selector2@68f4865]" started-at="2024-08-04T10:01:07Z" name="TC_05_Phone" finished-at="2024-08-04T10:01:27Z" duration-ms="20086" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_05_Phone -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:webdriver.Topic_03_selector2@68f4865]" started-at="2024-08-04T10:01:27Z" name="afterClass" finished-at="2024-08-04T10:01:37Z" duration-ms="10110" status="PASS">
+        </test-method> <!-- TC_05_Is_Select_Refactor -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:webdriver.Topic_07_Browser_Element3@18e36d14]" started-at="2024-08-11T12:14:46Z" name="afterClass" finished-at="2024-08-11T12:14:51Z" duration-ms="5141" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- webdriver.Topic_03_selector2 -->
+      </class> <!-- webdriver.Topic_07_Browser_Element3 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

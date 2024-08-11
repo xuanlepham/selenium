@@ -3,16 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="webdriver.Topic_03_selector2">
+      <class name="webdriver.Topic_07_Browser_Element3">
         <methods>
           <include name="beforeClass"/>
-          <include name="TC_04_Cpassword"/>
-          <include name="TC_03_Password"/>
+          <include name="TC_03_Is_Displayed_Refactor"/>
           <include name="afterClass"/>
-          <include name="TC_05_Phone"/>
-          <include name="TC_02_Email"/>
         </methods>
-      </class> <!-- webdriver.Topic_03_selector2 -->
+      </class> <!-- webdriver.Topic_07_Browser_Element3 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
