@@ -45,32 +45,47 @@ public class Topic_07_Browser_Element4 {
 		 
 		 // Lowcase
 		 WebElement password = driver.findElement(By.xpath("//input[@id='new_password']"));
-		 password.sendKeys("111");
+		 password.sendKeys("123");
+		 Assert.assertTrue(isValidationRulePassed(driver, "//li[@class='lowercase-char completed']"));
+		
 		 
 //		 WebElement buttonPassword = driver.findElement(By.xpath("//button[@id='create-account-enabled']"));
 //		 buttonPassword.click();
 		 // Uppercase
-		 Assert.assertFalse(isValidationRulePassed(driver, "//span[contains(text(),'One lowercase character')]"));
+		 password.clear();
+		 password.sendKeys("Abc");
+		 Assert.assertTrue(isValidationRulePassed(driver, "//span[contains(text(),'One uppercase character')]"));
 		 
 		 // Number
-		 
+		 password.clear();
+		 password.sendKeys("123");
+		 Assert.assertTrue(isValidationRulePassed(driver, "//span[contains(text(),'One number')]"));
 		 // Speical
-		 
+		 password.clear();
+		 password.sendKeys("@bc");
+		 Assert.assertTrue(isValidationRulePassed(driver, "//span[contains(text(),'One special character')]"));
 		 // >=8 character
+		 password.clear();
+		 password.sendKeys("phamxuan");
+		 Assert.assertTrue(isValidationRulePassed(driver, "//span[contains(text(),'8 characters minimum')]"));
 		 
 		 // Full valid data
-		 
+		 password.clear();
+		 password.sendKeys("phamxuanle@2205");
+		 Assert.assertTrue(isValidationRulePassed(driver, "//span[contains(text(),'One lowercase character')]"));
 	 }
 	 public static boolean isValidationRulePassed (WebDriver driver, String ruleSelector) {
 		 WebElement ruleElement =driver.findElement(By.xpath(ruleSelector));
 		 String color = ruleElement.getCssValue("color");
-		 String hexColor = Color.fromString(color).asHex();
-		if(color.equals("#008547")) {
+		// String hexColor = Color.fromString(color).asHex();
+//	return color.equalsIgnoreCase(color);
+		if(color.equals("")) {
 			return true;
+		}else {
+			return false;
 		}
-		return false;
-	 }
-	
+		 }
+	 
 	 @AfterClass
 	 public void afterClass() {
 		 try {

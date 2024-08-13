@@ -9,6 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import main.java.pageOjects.admin.AdminHomePageObject;
 import main.java.pageOjects.admin.AdminLoginPageObject;
+import main.java.pageOjects.usermanager.UserManagerPageObject;
 
 import static org.testng.Assert.assertTrue;
 
@@ -24,13 +25,17 @@ public class BasePage {
 		AdminLoginPageObject loginPage = new AdminLoginPageObject();//địa chỉ trang web trong ()
 		 AdminHomePageObject homePage;
 		 
-		 homePage = loginPage.loginWebsite();//địa chỉ trang web trong ();
+		 homePage = loginPage.loginW	ebsite();//địa chỉ trang web trong ();
 				 
 		//Trả về một đối tượng AdminHomePageObject
 		return new AdminHomePageObject();
 		
 	}
-	public UserManagerPageObject clickUserManager() {
+	public static BasePage getBasePageObject() {
+        return new BasePage();
+    }
+	
+	public void openPageUrl(String pageUrl) {
 		
 	}
 }
