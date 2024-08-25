@@ -1,25 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-13T08:48:21Z" name="Default suite" finished-at="2024-08-13T08:48:33Z" duration-ms="12518">
+  <suite started-at="2024-08-25T13:29:43Z" name="Default suite" finished-at="2024-08-25T13:30:09Z" duration-ms="25565">
     <groups>
     </groups>
-    <test started-at="2024-08-13T08:48:21Z" name="Default test" finished-at="2024-08-13T08:48:33Z" duration-ms="12518">
-      <class name="webdriver.Topic_07_Browser_Element5">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:webdriver.Topic_07_Browser_Element5@2474f125]" started-at="2024-08-13T08:48:21Z" name="beforeClass" finished-at="2024-08-13T08:48:22Z" duration-ms="1249" status="PASS">
+    <test started-at="2024-08-25T13:29:43Z" name="Default test" finished-at="2024-08-25T13:30:09Z" duration-ms="25565">
+      <class name="webdriver.Topic_10_Custom_Dropdown">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:webdriver.Topic_10_Custom_Dropdown@418c5a9c]" started-at="2024-08-25T13:29:43Z" name="beforeClass" finished-at="2024-08-25T13:29:44Z" duration-ms="1185" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="TC_01_Element()[pri:0, instance:webdriver.Topic_07_Browser_Element5@2474f125]" started-at="2024-08-13T08:48:22Z" name="TC_01_Element" finished-at="2024-08-13T08:48:33Z" duration-ms="11031" status="PASS">
+        <test-method signature="TC_01_Jquery()[pri:0, instance:webdriver.Topic_10_Custom_Dropdown@418c5a9c]" started-at="2024-08-25T13:29:44Z" name="TC_01_Jquery" finished-at="2024-08-25T13:29:46Z" duration-ms="1260" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_01_Element -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:webdriver.Topic_07_Browser_Element5@2474f125]" started-at="2024-08-13T08:48:33Z" name="afterClass" finished-at="2024-08-13T08:48:33Z" duration-ms="218" status="PASS">
+        </test-method> <!-- TC_01_Jquery -->
+        <test-method signature="TC_02_ReactJs()[pri:0, instance:webdriver.Topic_10_Custom_Dropdown@418c5a9c]" started-at="2024-08-25T13:29:46Z" name="TC_02_ReactJs" finished-at="2024-08-25T13:29:52Z" duration-ms="6599" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_02_ReactJs -->
+        <test-method signature="TC_03_New_Customer()[pri:0, instance:webdriver.Topic_10_Custom_Dropdown@418c5a9c]" started-at="2024-08-25T13:29:52Z" name="TC_03_New_Customer" finished-at="2024-08-25T13:30:04Z" duration-ms="11368" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_03_New_Customer -->
+        <test-method signature="TC_04_VueJs()[pri:0, instance:webdriver.Topic_10_Custom_Dropdown@418c5a9c]" started-at="2024-08-25T13:30:04Z" name="TC_04_VueJs" finished-at="2024-08-25T13:30:04Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_04_VueJs -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:webdriver.Topic_10_Custom_Dropdown@418c5a9c]" started-at="2024-08-25T13:30:04Z" name="afterClass" finished-at="2024-08-25T13:30:09Z" duration-ms="5140" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- webdriver.Topic_07_Browser_Element5 -->
+      </class> <!-- webdriver.Topic_10_Custom_Dropdown -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

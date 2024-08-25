@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="webdriver.Topic_07_Browser_Element5">
+      <class name="webdriver.Topic_9_Dropdown">
         <methods>
           <include name="afterClass"/>
-          <include name="TC_01_Element"/>
+          <include name="TC_01_Nopcommerce"/>
           <include name="beforeClass"/>
         </methods>
-      </class> <!-- webdriver.Topic_07_Browser_Element5 -->
+      </class> <!-- webdriver.Topic_9_Dropdown -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
