@@ -170,7 +170,7 @@ public class Topic_11_Handle_Button {
 	}
 	
 	@Test
-	public void TC_07_Custom_Radio_Noinput() {
+	public void TC_07_Custom_Radio_Noinput() throws InterruptedException {
 		driver.get("https://docs.google.com/forms/d/e/1FAIpQLSfiypnd69zhuDkjKgqvpID9kwO29UCzeCVrGGtbNPZXQok0jA/viewform");
 		
 		
@@ -179,6 +179,31 @@ public class Topic_11_Handle_Button {
 		checktoRadiocheckbox("//div[@aria-label='Hà Nội']");
 		Assert.assertEquals(driver.findElement(By.xpath("//div[@aria-label='Hà Nội']")).getAttribute("aria-checked"), "true");
 		Assert.assertTrue(driver.findElement(By.xpath("//div[@aria-label='Hà Nội' and @aria-checked='true']")).isDisplayed());
+		
+		
+//		Assert.assertTrue(driver.findElement(By.xpath("//div[@aria-label='Quảng Ngãi' and @aria-checked='false']")).isDisplayed());
+//		Assert.assertEquals(driver.findElement(By.xpath("//div[@aria-label='Quảng Ngãi']")).getAttribute("aria-checked"), "false");
+//		checktoCheckboxJS("//div[@aria-label='Quảng Ngãi' and @aria-checked='false']");
+//		Assert.assertEquals(driver.findElement(By.xpath("//div[@aria-label='Quảng Ngãi']")).getAttribute("aria-checked"), "true");
+//		Assert.assertTrue(driver.findElement(By.xpath("//div[@aria-label='Quảng Ngãi' and @aria-checked='true']")).isDisplayed());
+//		Thread.sleep(3000);
+//		unchecktoCheckboxJS("//div[@aria-label='Quảng Ngãi']");
+//		Assert.assertTrue(driver.findElement(By.xpath("//div[@aria-label='Quảng Ngãi' and @aria-checked='false']")).isDisplayed());
+//		Assert.assertEquals(driver.findElement(By.xpath("//div[@aria-label='Quảng Ngãi']")).getAttribute("aria-checked"), "false");
+//		
+//		unchecktoCheckboxJS("//div[@aria-label='Quảng Ngãi' and @aria-checked='true']");
+		List<WebElement> checkboxes = driver.findElements(By.xpath("//div[@role='checkbox']"));
+		// clickall
+		for(WebElement checkbox :checkboxes) {
+			checkbox.click();
+			Thread.sleep(1000);
+		}
+		for(WebElement checkbox :checkboxes) {
+			Assert.assertEquals(checkbox.getAttribute("aria-checked"), "true");
+			Thread.sleep(1000);
+		}
+		
+		
 	}
 	
 	
