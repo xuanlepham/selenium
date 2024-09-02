@@ -59,34 +59,41 @@ public class Topic_10_Custom_Dropdown {
 	
 	@Test
 	public void TC_01_Jquery() throws InterruptedException {
-		// 1.Click vào 1 element cho nó xổ ra các item bên trong
-		// 2.Chờ cho tất cả các item được load lên
-		// 3.Nếu item cần chọn nó nằm trong vùng view thì click vào
-		// 4.Nếu như item mình cần chọn không thấy thì scroll xuống và click vào
-		driver.get("http://jqueryui.com/resources/demos/selectmenu/default.html");
-		// 1.Click vào 1 element cho nó xổ ra các item bên trong
-		driver.findElement(By.xpath("//span[@id='number-button']")).click();
-		// 2.Wait cho tất cả element  được load ra (có trong html/dom)
-		// presence
-		expliciWait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.cssSelector("ul#number-menu >li>div")));
-//		expliciWait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//ul[@id='number-menu']/li/div")));
-		List<WebElement> allelements =	driver.findElements(By.cssSelector("ul#number-menu >li>div"));
-		System.out.println("All item"+allelements.size());
 		
-		for (WebElement item : allelements) {
-			if(item.getText().equals("19")) {
-				if(item.isDisplayed()) { // Nếu item mình chọn nằm trong view thì ấn click 
-					item.click();
-				}else {
-					jsExecutor.executeScript("argument[0].scrollIntoview(true);", item);
-					item.click();
-				}
-				
-			}
-		}
-	
+		driver.get("https://multiple-select.wenzhixin.net.cn/templates/template.html?v=189&url=basic.html");
+		String [] fristmonth = {"January","May","November"};
+		String [] secondmonth = {"January","May","November"};
+//		driver.findElement(By.xpath("(//button[@class='ms-choice'])[1]")).click();
 		
-		// 3.Nếu item cần chọn nó nằm trong vùng view thì click vào
+		selectMutilitemInDropdown("(//button[@class='ms-choice'])[1]","(//button[@class='ms-choice'])[1]/following-sibling::div/ul//span",fristmonth);
+//		// 1.Click vào 1 element cho nó xổ ra các item bên trong
+//		// 2.Chờ cho tất cả các item được load lên
+//		// 3.Nếu item cần chọn nó nằm trong vùng view thì click vào
+//		// 4.Nếu như item mình cần chọn không thấy thì scroll xuống và click vào
+//		driver.get("http://jqueryui.com/resources/demos/selectmenu/default.html");
+//		// 1.Click vào 1 element cho nó xổ ra các item bên trong
+//		driver.findElement(By.xpath("//span[@id='number-button']")).click();
+//		// 2.Wait cho tất cả element  được load ra (có trong html/dom)
+//		// presence
+//		expliciWait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.cssSelector("ul#number-menu >li>div")));
+////		expliciWait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//ul[@id='number-menu']/li/div")));
+//		List<WebElement> allelements =	driver.findElements(By.cssSelector("ul#number-menu >li>div"));
+//		System.out.println("All item"+allelements.size());
+//		
+//		for (WebElement item : allelements) {
+//			if(item.getText().equals("19")) {
+//				if(item.isDisplayed()) { // Nếu item mình chọn nằm trong view thì ấn click 
+//					item.click();
+//				}else {
+//					jsExecutor.executeScript("argument[0].scrollIntoview(true);", item);
+//					item.click();
+//				}
+//				
+//			}
+//		}
+//	
+//		
+//		// 3.Nếu item cần chọn nó nằm trong vùng view thì click vào
 		
 		
 	}
@@ -194,6 +201,38 @@ public class Topic_10_Custom_Dropdown {
 		return rand.nextInt(999999);
 		
 	}
+	public void selectMutilitemInDropdown(String parentElementX,String childElementX,String[] expectedValueItem ) {
+		driver.findElement(By.xpath(parentElementX)).click();
+		expliciWait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath(childElementX)));
+		List <WebElement> allitems =driver.findElements(By.xpath(childElementX));
+		
+		for (WebElement childElement : allitems) { // Duyệt qua tất cả phần tử khi thỏa mãn điều kiện
+			for(String item : expectedValueItem ) {
+			if(childElement.getText().equals(item)) {
+				jsExecutor.executeScript("arguments[0].scrollIntoView(true);", childElement);
+				sleepInSecond(1);
+				childElement.click();
+				sleepInSecond(1);
+				
+				List <WebElement> itemSelected =driver.findElements(By.xpath("//li[@class='selected']"));
+				System.out.println("item Selected="+itemSelected.size());
+				if(expectedValueItem.length==itemSelected.size()) {
+					break;
+				}
+				
+				
+		}
+			}
+			}
+		
+		
+		
+	}
+	public void sleepInSecond(int i) {
+		// TODO Auto-generated method stub
+		
+	}
+
 	@AfterClass
 	public void afterClass() {
 		try {
