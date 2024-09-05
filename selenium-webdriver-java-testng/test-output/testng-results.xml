@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-02T15:15:49Z" name="Default suite" finished-at="2024-09-02T15:16:11Z" duration-ms="21542">
+  <suite started-at="2024-09-05T15:56:58Z" name="Default suite" finished-at="2024-09-05T15:57:03Z" duration-ms="4522">
     <groups>
     </groups>
-    <test started-at="2024-09-02T15:15:49Z" name="Default test" finished-at="2024-09-02T15:16:11Z" duration-ms="21542">
-      <class name="webdriver.Topic_11_Handle_Button">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:webdriver.Topic_11_Handle_Button@1672fe87]" started-at="2024-09-02T15:15:49Z" name="beforeClass" finished-at="2024-09-02T15:15:50Z" duration-ms="868" status="PASS">
+    <test started-at="2024-09-05T15:56:58Z" name="Default test" finished-at="2024-09-05T15:57:03Z" duration-ms="4522">
+      <class name="webdriver.Topic_12_Handle_Alert_Authentication">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:webdriver.Topic_12_Handle_Alert_Authentication@40317ba2]" started-at="2024-09-05T15:56:58Z" name="beforeClass" finished-at="2024-09-05T15:56:59Z" duration-ms="783" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="TC_07_Custom_Radio_Noinput()[pri:0, instance:webdriver.Topic_11_Handle_Button@1672fe87]" started-at="2024-09-02T15:15:50Z" name="TC_07_Custom_Radio_Noinput" finished-at="2024-09-02T15:16:06Z" duration-ms="15654" status="PASS">
+        <test-method signature="TC_06_Alert_Authentication_AutoIt()[pri:0, instance:webdriver.Topic_12_Handle_Alert_Authentication@40317ba2]" started-at="2024-09-05T15:56:59Z" name="TC_06_Alert_Authentication_AutoIt" finished-at="2024-09-05T15:57:03Z" duration-ms="3646" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_07_Custom_Radio_Noinput -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:webdriver.Topic_11_Handle_Button@1672fe87]" started-at="2024-09-02T15:16:06Z" name="afterClass" finished-at="2024-09-02T15:16:11Z" duration-ms="5011" status="PASS">
+        </test-method> <!-- TC_06_Alert_Authentication_AutoIt -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:webdriver.Topic_12_Handle_Alert_Authentication@40317ba2]" started-at="2024-09-05T15:57:03Z" name="afterClass" finished-at="2024-09-05T15:57:03Z" duration-ms="83" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- webdriver.Topic_11_Handle_Button -->
+      </class> <!-- webdriver.Topic_12_Handle_Alert_Authentication -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
