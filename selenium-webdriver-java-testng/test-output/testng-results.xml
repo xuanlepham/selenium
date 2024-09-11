@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-11T13:11:47Z" name="Default suite" finished-at="2024-09-11T13:12:00Z" duration-ms="13228">
+  <suite started-at="2024-09-11T16:32:09Z" name="Default suite" finished-at="2024-09-11T16:32:16Z" duration-ms="6534">
     <groups>
     </groups>
-    <test started-at="2024-09-11T13:11:47Z" name="Default test" finished-at="2024-09-11T13:12:00Z" duration-ms="13228">
-      <class name="webdriver.Topic_13_Actions1">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:webdriver.Topic_13_Actions1@68f4865]" started-at="2024-09-11T13:11:47Z" name="beforeClass" finished-at="2024-09-11T13:11:48Z" duration-ms="863" status="PASS">
+    <test started-at="2024-09-11T16:32:09Z" name="Default test" finished-at="2024-09-11T16:32:16Z" duration-ms="6534">
+      <class name="webdriver.Topic_14_Popup">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:webdriver.Topic_14_Popup@45a4b042]" started-at="2024-09-11T16:32:09Z" name="beforeClass" finished-at="2024-09-11T16:32:10Z" duration-ms="862" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="TC_07_Drags_And_Drop_HTML5()[pri:0, instance:webdriver.Topic_13_Actions1@68f4865]" started-at="2024-09-11T13:11:48Z" name="TC_07_Drags_And_Drop_HTML5" finished-at="2024-09-11T13:12:00Z" duration-ms="12252" status="PASS">
+        <test-method signature="TC_01_Fixed_Popup()[pri:0, instance:webdriver.Topic_14_Popup@45a4b042]" started-at="2024-09-11T16:32:10Z" name="TC_01_Fixed_Popup" finished-at="2024-09-11T16:32:16Z" duration-ms="5520" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_07_Drags_And_Drop_HTML5 -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:webdriver.Topic_13_Actions1@68f4865]" started-at="2024-09-11T13:12:00Z" name="afterClass" finished-at="2024-09-11T13:12:00Z" duration-ms="103" status="PASS">
+        </test-method> <!-- TC_01_Fixed_Popup -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:webdriver.Topic_14_Popup@45a4b042]" started-at="2024-09-11T16:32:16Z" name="afterClass" finished-at="2024-09-11T16:32:16Z" duration-ms="140" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- webdriver.Topic_13_Actions1 -->
+      </class> <!-- webdriver.Topic_14_Popup -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
