@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="webdriver.Topic_13_Actions1">
+      <class name="webdriver.Topic_13_Actions0">
         <methods>
           <include name="afterClass"/>
+          <include name="TC_07_Drags_And_Drop_HTML5"/>
           <include name="beforeClass"/>
-          <include name="TC_02_Hover"/>
         </methods>
-      </class> <!-- webdriver.Topic_13_Actions1 -->
+      </class> <!-- webdriver.Topic_13_Actions0 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

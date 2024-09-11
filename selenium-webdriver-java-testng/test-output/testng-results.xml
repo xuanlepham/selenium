@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-08T16:41:22Z" name="Default suite" finished-at="2024-09-08T16:41:33Z" duration-ms="10287">
+  <suite started-at="2024-09-11T13:11:47Z" name="Default suite" finished-at="2024-09-11T13:12:00Z" duration-ms="13228">
     <groups>
     </groups>
-    <test started-at="2024-09-08T16:41:22Z" name="Default test" finished-at="2024-09-08T16:41:33Z" duration-ms="10287">
+    <test started-at="2024-09-11T13:11:47Z" name="Default test" finished-at="2024-09-11T13:12:00Z" duration-ms="13228">
       <class name="webdriver.Topic_13_Actions1">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:webdriver.Topic_13_Actions1@7357a011]" started-at="2024-09-08T16:41:22Z" name="beforeClass" finished-at="2024-09-08T16:41:23Z" duration-ms="865" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:webdriver.Topic_13_Actions1@68f4865]" started-at="2024-09-11T13:11:47Z" name="beforeClass" finished-at="2024-09-11T13:11:48Z" duration-ms="863" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="TC_02_Hover()[pri:0, instance:webdriver.Topic_13_Actions1@7357a011]" started-at="2024-09-08T16:41:23Z" name="TC_02_Hover" finished-at="2024-09-08T16:41:31Z" duration-ms="8146" status="PASS">
+        <test-method signature="TC_07_Drags_And_Drop_HTML5()[pri:0, instance:webdriver.Topic_13_Actions1@68f4865]" started-at="2024-09-11T13:11:48Z" name="TC_07_Drags_And_Drop_HTML5" finished-at="2024-09-11T13:12:00Z" duration-ms="12252" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_02_Hover -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:webdriver.Topic_13_Actions1@7357a011]" started-at="2024-09-08T16:41:31Z" name="afterClass" finished-at="2024-09-08T16:41:33Z" duration-ms="1265" status="PASS">
+        </test-method> <!-- TC_07_Drags_And_Drop_HTML5 -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:webdriver.Topic_13_Actions1@68f4865]" started-at="2024-09-11T13:12:00Z" name="afterClass" finished-at="2024-09-11T13:12:00Z" duration-ms="103" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
